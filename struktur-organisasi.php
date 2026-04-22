@@ -12,7 +12,7 @@ require_once 'header.php';
 <section class="relative w-full h-[420px] overflow-hidden bg-primary">
     <div class="absolute inset-0 z-0">
         <div class="w-full h-full bg-cover bg-center opacity-40"
-            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSGy6hBHPVh312XyczwXYJvsUZmgFx6afUBQMpnGgfJcTQ_FHrVZfyjRp4OAoF2dvXn9uLqWLSjuybafJc2FLRMwBpqSEG1fyG8wBW-iUKAv39jxN-LRZHe8SeiT2YXOdhtMYZERhHVSjIRe796dlySNqp3oYeOfdMcZUJFp_YG32VCorC4QxGp3B5ZUzTHGhNd7VsvRej4Vx9q3Z4CdDXONEhBwUXgsiJoKYe64FZtfoolCiI2qINVw1e6gHGAfNvYhRF5qwHD0Dl');"></div>
+            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDeLFcmlZFAAz_hMeL_QUSPC8jKtQ92hHlpNJ6jNit6O75bieL7n-wp9UORrGQJJA4F5lQDrx834Y5SeICCBpluVl5deDrc37tnDSQsZKSAQNTgH_zJ_uwD7nJ7LfYwJUpZQa0HaTwHkaA2eUFV0rrgiFVFPEI4OhydFI5vnG62ZJcWjld_VDISdss5nfGwnxjNqlXuUuUITsUEd98qp8De-j545Wqw_lPBxfDRAdDYi26IGSWis0U8zEUg98nPbroyurk5oIJvnYY5');"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-primary/70 via-primary/60 to-primary"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
@@ -141,63 +141,15 @@ require_once 'header.php';
         </div>
     </section>
 
-    <!-- Keterangan Section -->
-    <section>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <?php
-            $keterangan = [
-                [
-                    'icon'  => 'update',
-                    'label' => 'Terakhir Diperbarui',
-                    'value' => 'Tahun 2024',
-                    'color' => 'text-primary',
-                    'bg'    => 'bg-primary/10',
-                ],
-                [
-                    'icon'  => 'groups',
-                    'label' => 'Total Personel',
-                    'value' => 'Lihat Data ASN',
-                    'color' => 'text-emerald-700',
-                    'bg'    => 'bg-emerald-50 dark:bg-emerald-950/30',
-                ],
-            ];
-            foreach ($keterangan as $k): ?>
-            <div class="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl p-5 shadow-sm flex items-center gap-4">
-                <div class="<?php echo $k['bg']; ?> w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <span class="material-symbols-outlined <?php echo $k['color']; ?>"><?php echo $k['icon']; ?></span>
-                </div>
-                <div>
-                    <p class="text-xs text-slate-400 font-semibold uppercase tracking-widest"><?php echo $k['label']; ?></p>
-                    <p class="text-sm font-bold <?php echo $k['color']; ?>"><?php echo $k['value']; ?></p>
-                </div>
-            </div>
-            <?php endforeach; ?>
-        </div>
-    </section>
 
-    <!-- Bottom Navigation -->
-    <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <a href="tupoksi.php" class="group flex items-center gap-4 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:border-primary/30 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all">
-            <div class="w-10 h-10 bg-primary/10 group-hover:bg-primary rounded-xl flex items-center justify-center transition-all">
-                <span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">arrow_back</span>
-            </div>
-            <div>
-                <p class="text-xs text-slate-400 font-medium">Sebelumnya</p>
-                <p class="text-sm font-bold text-primary dark:text-white">Tugas Pokok & Fungsi</p>
-            </div>
-        </a>
-        <a href="beranda.php" class="group flex items-center justify-end gap-4 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:border-accent/30 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all">
-            <div class="text-right">
-                <p class="text-xs text-slate-400 font-medium">Kembali ke</p>
-                <p class="text-sm font-bold text-primary dark:text-white">Beranda</p>
-            </div>
-            <div class="w-10 h-10 bg-accent/10 group-hover:bg-accent rounded-xl flex items-center justify-center transition-all">
-                <span class="material-symbols-outlined text-accent group-hover:text-white transition-colors">home</span>
-            </div>
-        </a>
-    </section>
+
 
 </main>
+
+<!-- Terakhir Diperbarui -->
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-6 flex justify-end">
+    <p class="text-slate-400 text-xs italic">Terakhir Diperbarui: 22 April 2026</p>
+</div>
 
 <!-- ===== LIGHTBOX MODAL ===== -->
 <div id="lightbox-overlay"
