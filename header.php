@@ -76,8 +76,12 @@
                     $current_page = $_GET['page'] ?? basename($_SERVER['PHP_SELF'], '.php');
 
                     // Kelompok halaman yang termasuk dalam menu "Profil"
-                    $profil_pages = ['visi-misi', 'tupoksi', 'struktur-organisasi'];
+                    $profil_pages = ['visi-misi', 'tupoksi', 'struktur-organisasi', 'data-pegawai'];
                     $profil_active = in_array($current_page, $profil_pages);
+
+                    // Kelompok halaman yang termasuk dalam menu "Standar Pelayanan"
+                    $pelayanan_pages = ['maklumat-pelayanan', 'sop', 'persyaratan-layanan', 'produk-layanan', 'biaya-layanan'];
+                    $pelayanan_active = in_array($current_page, $pelayanan_pages);
 
                     // Helper: tandai menu aktif berdasarkan $current_page
                     $nav_active = function ($page) use ($current_page) {
@@ -98,7 +102,7 @@
                                 <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'visi-misi' ? 'text-primary font-bold' : ''; ?>" href="visi-misi.php">Visi &amp; Misi</a></li>
                                 <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'struktur-organisasi' ? 'text-primary font-bold' : ''; ?>" href="struktur-organisasi.php">Struktur Organisasi</a></li>
                                 <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'tupoksi' ? 'text-primary font-bold' : ''; ?>" href="tupoksi.php">Tugas Pokok &amp; Fungsi</a></li>
-                                <li><a class="block text-sm hover:text-primary py-1" href="#">Data Pegawai</a></li>
+                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'data-pegawai' ? 'text-primary font-bold' : ''; ?>" href="data-pegawai.php">Data Pegawai</a></li>
                             </ul>
                         </div>
                     </div>
@@ -111,14 +115,16 @@
 
                     <!-- Standar Pelayanan -->
                     <div class="group relative py-7">
-                        <button class="flex items-center gap-1 text-sm font-semibold hover:text-primary transition-colors">
+                        <button class="flex items-center gap-1 text-sm font-semibold hover:text-primary transition-colors <?php echo $pelayanan_active ? 'text-primary dark:text-white border-b-2 border-primary font-bold' : ''; ?>">
                             Standar Pelayanan <span class="material-symbols-outlined text-sm">expand_more</span>
                         </button>
                         <div class="mega-menu absolute top-full left-0 w-64 bg-white dark:bg-slate-800 shadow-xl rounded-b-xl border-t-2 border-primary p-4">
                             <ul class="space-y-3">
-                                <li><a class="block text-sm hover:text-primary py-1" href="#">Maklumat Pelayanan</a></li>
-                                <li><a class="block text-sm hover:text-primary py-1" href="#">SOP</a></li>
-                                <li><a class="block text-sm hover:text-primary py-1" href="#">Persyaratan Layanan</a></li>
+                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'maklumat-pelayanan' ? 'text-primary font-bold' : ''; ?>" href="maklumat-pelayanan.php">Maklumat Pelayanan</a></li>
+                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'sop' ? 'text-primary font-bold' : ''; ?>" href="sop.php">SOP</a></li>
+                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'persyaratan-layanan' ? 'text-primary font-bold' : ''; ?>" href="persyaratan-layanan.php">Persyaratan Layanan</a></li>
+                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'produk-layanan' ? 'text-primary font-bold' : ''; ?>" href="produk-layanan.php">Produk Layanan</a></li>
+                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'biaya-layanan' ? 'text-primary font-bold' : ''; ?>" href="biaya-layanan.php">Biaya Layanan</a></li>
                             </ul>
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 <?php
-$page_title = 'Program Kerja - Satpol PP Kabupaten Kubu Raya';
+$page_title   = 'Program Kerja - Satpol PP Kabupaten Kubu Raya';
+$current_page = 'program';
 include 'header.php';
 ?>
 
@@ -18,10 +19,10 @@ include 'header.php';
             <span class="text-accent">Program Kerja</span>
         </nav>
         <span class="inline-block px-4 py-1.5 mb-4 rounded-full bg-accent/20 text-accent font-bold text-xs uppercase tracking-widest border border-accent/30 w-fit">Transparansi &amp; Akuntabilitas</span>
-        <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight">
             Dokumen Strategis <br><span class="text-accent">&amp; Program Kerja</span>
         </h1>
-        <p class="text-slate-300 mt-4 max-w-2xl text-base md:text-lg leading-relaxed">
+        <p class="text-slate-300 mt-4 max-w-2xl text-sm md:text-base leading-relaxed">
             Akses publik terhadap dokumen perencanaan dan laporan kinerja Satuan Polisi Pamong Praja Kabupaten Kubu Raya.
         </p>
     </div>
@@ -30,7 +31,7 @@ include 'header.php';
     <!-- Main Content: Strategic Documents List -->
     <section class="py-24 px-8 max-w-7xl mx-auto">
         <div class="mb-12">
-            <h2 class="text-primary dark:text-white text-4xl font-extrabold tracking-tight">
+            <h2 class="text-primary dark:text-white text-3xl font-extrabold tracking-tight">
                 Daftar Dokumen Strategis
             </h2>
             <div class="h-1.5 w-24 bg-accent mt-4"></div>
@@ -74,7 +75,7 @@ include 'header.php';
         ?>
 
         <div class="space-y-4">
-            <?php foreach ($documents as $doc): ?>
+            <?php foreach ($documents as $index => $doc): ?>
                 <div class="group bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all duration-300 rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between shadow-sm hover:shadow-xl border border-slate-100 dark:border-slate-800">
                     <div class="flex items-center gap-6 w-full md:w-auto">
                         <div class="w-16 h-16 bg-primary/5 rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
@@ -94,62 +95,126 @@ include 'header.php';
                             </p>
                         </div>
                     </div>
-                    <div class="flex items-center gap-8 mt-6 md:mt-0 w-full md:w-auto justify-between md:justify-end">
+                    <div class="flex items-center gap-4 mt-6 md:mt-0 w-full md:w-auto justify-between md:justify-end">
                         <div class="text-right hidden md:block">
                             <p class="text-[10px] font-bold uppercase text-slate-500">Ukuran File</p>
                             <p class="font-bold text-primary dark:text-white">
                                 <?= htmlspecialchars($doc['file_size']) ?>
                             </p>
                         </div>
-                        <a href="<?= htmlspecialchars($doc['file_url']) ?>"
-                            class="bg-accent text-white px-8 py-4 rounded-xl font-bold flex items-center gap-3 shadow-lg shadow-accent/20 hover:shadow-accent/40 hover:-translate-y-1 transition-all active:scale-95">
-                            <span class="material-symbols-outlined">download</span>
-                            Unduh PDF
-                        </a>
+                        <div class="flex items-center gap-3">
+                            <button
+                                onclick="openDocModal('<?= htmlspecialchars($doc['file_url']) ?>', '<?= htmlspecialchars($doc['title']) ?>')"
+                                class="bg-primary/10 text-primary hover:bg-primary hover:text-white px-5 py-3 rounded-xl font-bold text-sm flex items-center gap-2 transition-all border border-primary/20">
+                                <span class="material-symbols-outlined text-[18px]">visibility</span>
+                                Lihat
+                            </button>
+                            <a href="<?= htmlspecialchars($doc['file_url']) ?>"
+                                download
+                                class="bg-accent text-white px-5 py-3 rounded-xl font-bold text-sm flex items-center gap-2 shadow-md shadow-accent/20 hover:shadow-accent/40 hover:-translate-y-1 transition-all active:scale-95">
+                                <span class="material-symbols-outlined text-[18px]">download</span>
+                                Unduh PDF
+                            </a>
+                        </div>
                     </div>
                 </div>
             <?php endforeach; ?>
         </div>
     </section>
+</main>
 
-    <!-- Mission Section -->
-    <section class="bg-primary py-24 relative overflow-hidden">
-        <div class="asymmetric-pattern absolute inset-0"></div>
-        <div class="relative z-10 px-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div class="order-2 md:order-1">
-                <img alt="Modern government office interior"
-                    class="rounded-3xl shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500 aspect-video object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXPctyZDy7y3HVEmKe3nY-oDI4AkdR4UAnIP3-QI4IpCEJIJWrJRAnXXMIQZ_pl6ci74Z7nJ6UATDXv7Yf9DfI0tylQRXsyCZI6vnhp6x4e8A6l_hzrusTvFvCjkiPca_3Z_2vONIIQhCtUyo5CJFit3TEanVdPX4ueJzC8vqShdv5ebBFj0iuooEveEo8qPuL1BEzQdYBmJz40DOp4tX8nyqOwx32zKz2FNCRFxUZvcjaSmxgJot8TQju-6t-wYr_hgt1Xgo2igxU" />
+<!-- PDF Modal Viewer -->
+<div id="doc-modal" class="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-sm flex items-center justify-center hidden">
+    <div class="relative bg-white dark:bg-slate-900 rounded-2xl shadow-2xl w-[95vw] max-w-5xl h-[90vh] flex flex-col overflow-hidden">
+        <!-- Modal Header -->
+        <div class="flex items-center justify-between px-6 py-4 border-b border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-primary/10 rounded-xl flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-lg">description</span>
+                </div>
+                <div>
+                    <p class="text-xs text-slate-400 font-medium uppercase tracking-widest">Dokumen</p>
+                    <h3 id="modal-title" class="text-base font-extrabold text-primary dark:text-white"></h3>
+                </div>
             </div>
-            <div class="order-1 md:order-2">
-                <span class="text-accent font-extrabold uppercase tracking-widest text-xs mb-4 block">
-                    Misi Utama
-                </span>
-                <h2 class="text-white text-4xl md:text-5xl font-extrabold tracking-tighter leading-tight mb-8">
-                    Mengawal Perda Demi Ketertiban Umum.
-                </h2>
+            <div class="flex items-center gap-3">
+                <a id="modal-download-btn" href="#" download
+                    class="flex items-center gap-2 bg-accent text-white px-4 py-2 rounded-xl font-bold text-sm hover:-translate-y-0.5 transition-all shadow-md shadow-accent/20">
+                    <span class="material-symbols-outlined text-[18px]">download</span>
+                    Unduh PDF
+                </a>
+                <button onclick="closeDocModal()"
+                    class="w-9 h-9 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 rounded-xl flex items-center justify-center transition-colors">
+                    <span class="material-symbols-outlined text-slate-600 dark:text-slate-300">close</span>
+                </button>
+            </div>
+        </div>
 
-                <?php
-                $missions = [
-                    'Peningkatan kompetensi sumber daya manusia anggota Satuan Polisi Pamong Praja secara berkelanjutan.',
-                    'Modernisasi sarana dan prasarana penunjang operasional penegakan peraturan daerah.',
-                    'Penguatan kolaborasi antar instansi untuk menciptakan stabilitas keamanan wilayah.',
-                ];
-                ?>
-
-                <div class="space-y-6">
-                    <?php foreach ($missions as $mission): ?>
-                        <div class="flex gap-4">
-                            <div class="mt-1 h-2 w-2 rounded-full bg-accent shrink-0"></div>
-                            <p class="text-white/80 font-medium">
-                                <?= htmlspecialchars($mission) ?>
-                            </p>
-                        </div>
-                    <?php endforeach; ?>
+        <!-- iframe / placeholder -->
+        <div class="flex-1 overflow-hidden bg-slate-100 dark:bg-slate-800 relative">
+            <iframe id="modal-iframe" src="" class="w-full h-full hidden border-0"></iframe>
+            <!-- Placeholder saat file_url = '#' -->
+            <div id="modal-placeholder" class="w-full h-full flex flex-col items-center justify-center gap-6 text-center p-8">
+                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-4xl">picture_as_pdf</span>
+                </div>
+                <div>
+                    <p class="text-primary dark:text-white font-bold text-lg mb-2">File PDF Belum Tersedia</p>
+                    <p class="text-slate-500 text-sm max-w-sm leading-relaxed">
+                        Dokumen belum diunggah. Silakan ganti nilai <code class="bg-slate-200 dark:bg-slate-700 px-2 py-0.5 rounded text-xs font-mono">file_url</code> pada array <code class="bg-slate-200 dark:bg-slate-700 px-2 py-0.5 rounded text-xs font-mono">$documents</code> di <code class="bg-slate-200 dark:bg-slate-700 px-2 py-0.5 rounded text-xs font-mono">program.php</code> dengan path file PDF yang sebenarnya.
+                    </p>
+                </div>
+                <div class="flex items-center gap-2 bg-primary/5 border border-primary/20 rounded-xl px-5 py-3">
+                    <span class="material-symbols-outlined text-primary text-sm">info</span>
+                    <span class="text-xs text-slate-600 dark:text-slate-300 font-medium">Contoh: <code>'file_url' => 'assets/docs/lkjip-2023.pdf'</code></span>
                 </div>
             </div>
         </div>
-    </section>
-</main>
+    </div>
+</div>
+
+<script>
+function openDocModal(url, title) {
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-download-btn').href = url;
+
+    var iframe   = document.getElementById('modal-iframe');
+    var ph       = document.getElementById('modal-placeholder');
+    var modal    = document.getElementById('doc-modal');
+
+    if (url && url !== '#') {
+        iframe.src = url;
+        iframe.classList.remove('hidden');
+        ph.classList.add('hidden');
+    } else {
+        iframe.src = '';
+        iframe.classList.add('hidden');
+        ph.classList.remove('hidden');
+    }
+
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeDocModal() {
+    var modal  = document.getElementById('doc-modal');
+    var iframe = document.getElementById('modal-iframe');
+    modal.classList.add('hidden');
+    iframe.src = '';
+    document.body.style.overflow = '';
+}
+
+// Tutup modal saat klik backdrop
+document.getElementById('doc-modal').addEventListener('click', function(e) {
+    if (e.target === this) closeDocModal();
+});
+
+// Tutup modal saat tekan Escape
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && !document.getElementById('doc-modal').classList.contains('hidden')) {
+        closeDocModal();
+    }
+});
+</script>
 
 <?php include 'footer.php'; ?>

@@ -67,8 +67,8 @@ $galeri = [
     ['src' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuA-ks630M-tPvVapmS5nKdCzIHBTpUwFJuRuP7Dd-ylOf9pMp7-lonYsQn18x8V2gbFoiyluwcmwat2yV2BI2ANz_12aT_-G-jiJYOznYYjKAoo3JkZIuZW5TUH1VRuW2OyS0Fx8RX0G3m_n9dEnVZiRVccsp-yf2WCNehAGPx-epMHaKtJ2gAO4K1Poq0PWN1JzXyUNXT51g3BK9go12OHoN3ATeRJ_Ob70CGqoMdbm-DX_8M47h5boBZj_jFPCLsgtKYbPnAJimKk', 'alt' => 'Patrol vehicle fleet showcase',          'icon' => 'zoom_in',     'col' => 'md:col-start-1 md:row-start-2'],
     ['src' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuCXLZ1NCI-vbbz76ottq7AyXQ93gGjsvfcklEZDFg0MRuLtn2BpmyrOaoteBDZuY0ma55cYAwKcHDMI0iB92NZjDTa-4z3Uxz5Wv8OqCtiN3ExvT1SMd5sFYZ4N9rhxrP2hKcgIOw5um-t_zAOddegS_knoH1DJ1iKvffS83KgsapSzyLFqhiMCqTYtP85xAOwl3tc_V3RydWQrqK0osujxvPVhpXfy5o_4_meWOZjNriRsNLo8wepBfLop8qNFmbu7U77OSnpW82Ip', 'alt' => 'Detailed operational activity photo',    'icon' => 'play_circle', 'col' => 'md:col-start-2 md:row-span-2'],
     ['src' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuB9y7q4WfcFlbiviJpNVWwzP8ALe9zUIhznmoNcYAaeCv3HMssYzIiOXBPtRadRwkQ4wOe7cYiRhTZZp_RoicMPgUJx2QsaOBXW-0ubHy34ctorF749FA10EnNzXvssrDPIUiWsvycFdvg-dehpY0DaCJnvgZnHWJ0QLPPpsYP1V-OgOanZEzOuMhcnCaLF4cFChEJp6pVkOlnZ8-BiYwQU4MqwFwXS6A5MbLZJBBJU_YdvfwZW25cD0CMWVns3e9RMjWrEjXCbl3OO', 'alt' => 'Community service activity photo',       'icon' => 'zoom_in',     'col' => 'md:col-start-3 md:row-start-1'],
-    ['src' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuB-nI5QS24dID7Og1_Fo8b1XdVwcTgRUabIwWL543Ro4iVKLb8x0WRdCryhGafnp7Kcn4CNwWnq-Q2CwDMA2MKQcEC9aFN01cTBKLv5InOPDxx_IqAzvW18KXh7EyyVHAzGZuUeNIBQuqCmJqjjRvfr',                                                                                                                                                           'alt' => 'Training session documentation',         'icon' => 'zoom_in',     'col' => 'md:col-start-3 md:row-start-2'],
-    ['src' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuBIHsnAlqi2k8KAOHnZXJlu_EzVE-bX_WbyZvglZuluuY-G5QlEqRQ735i8kxu0EOMePbYn-UBPDniO4hbTJUBrpA5YIjZtoKC5N8Wb6q8w86MnYWjSWSrRPUcMQXdKEvldUez97OBxYFvSyIAvSszwNY4Zh2SSrSi480D1hPmr0WRdCryhGafnp7Kcn4CNwWnq-Q2CwDMA2MKQcEC9aFN01cTBKLv5InOPDxx_IqAzvW18KXh7EyyVHAzGZuUeNIBQuqCmJqjjRvfr', 'alt' => 'Official event photo',                   'icon' => 'zoom_in',     'col' => 'md:col-start-4 md:row-span-2'],
+    ['src' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuCPr4yUWSvyEqzUwd1mA78qJrRIpaxLldNVASIODsshMN_l7DOLysIdYK14kFs7OTEpAzdPXB0sr15vYD5oTuEj5yxmD86wQ-E2hF45oYR0KAlASHgG1nGS_KIptK5m6w1-iwjx8JLMGQGlnjA9JteXDwzhyP5Gf-JB_4a7vWLpon3EB119XQBjdy3LvpnjI3IA4PKRlLSIrHi3HkbeSJ39mqGuiz6uHGg9oyPntKVddEB5KCiip_ZkVD9FJ18bJwRmKSBy3WdxF3SX', 'alt' => 'Training session documentation',         'icon' => 'zoom_in',     'col' => 'md:col-start-3 md:row-start-2'],
+    ['src' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuBZcR0iBVcwDA6pBRh8-SUeQy_5lnbVuw7dk20Mdj-iJwm7mjj0MH2epYcQBT4JAZaEvHiCGllH0bN6dYEJrcfrFKRyn6JROkTiEiJAZtGRjmgD01VkDpWViWdC3D90wbwsK3DRCyoSVIwf4VQu3tSxhvJCtRrxygpB1ithwTPDHt_pKRB-c7pmFZVGvp9J1sinX-HoD5Xo6E6kAMB4SasYIJ9qpIhaCugrB-YBXVBaRLnY42xcIukyES3TASZhyzzgV5zWtkglUWSA', 'alt' => 'Official event photo',                   'icon' => 'zoom_in',     'col' => 'md:col-start-4 md:row-span-2'],
 ];
 
 // ============================================================
@@ -95,22 +95,12 @@ require_once 'header.php';
         <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 h-full flex flex-col justify-center items-start">
-        <span class="inline-block px-4 py-1.5 mb-6 rounded-full bg-accent/20 text-accent font-bold text-xs uppercase tracking-widest border border-accent/30">Layanan Masyarakat</span>
         <h2 class="text-5xl md:text-7xl font-extrabold text-white leading-[1.1] mb-6 max-w-3xl">
             Penegak Perda, <br /><span class="text-accent">Pengawal Amanah</span>
         </h2>
         <p class="text-lg md:text-xl text-slate-200 mb-10 max-w-2xl leading-relaxed">
             Satuan Polisi Pamong Praja Kabupaten Kubu Raya berkomitmen penuh dalam menjaga ketertiban umum, ketentraman, dan perlindungan masyarakat.
         </p>
-        <div class="flex flex-wrap gap-4">
-            <button class="bg-accent hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-accent/30 transition-all flex items-center gap-3">
-                <span class="material-symbols-outlined">campaign</span>
-                Layanan Pengaduan
-            </button>
-            <button class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-xl font-bold text-lg border border-white/30 transition-all">
-                Pelajari Selengkapnya
-            </button>
-        </div>
     </div>
 </section>
 
@@ -210,16 +200,15 @@ require_once 'header.php';
     <section>
         <div class="flex items-end justify-between mb-12">
             <div>
-                <span class="text-accent font-bold uppercase tracking-widest text-sm">Update Terkini</span>
-                <h2 class="text-4xl font-extrabold text-primary dark:text-white mt-2">Warta Kubu Raya</h2>
+                <h2 class="text-4xl font-extrabold text-primary dark:text-white mt-2">Update Terkini</h2>
             </div>
-            <button class="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all">
+            <a href="berita.php" class="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all">
                 Lihat Berita Lainnya <span class="material-symbols-outlined">arrow_forward</span>
-            </button>
+            </a>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <?php foreach ($berita as $item): ?>
-                <article class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-xl transition-all group">
+            <?php foreach ($berita as $index => $item): ?>
+                <a href="berita-detail.php?id=<?php echo $index; ?>" class="block bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-xl transition-all group">
                     <div class="aspect-video relative overflow-hidden">
                         <img alt="<?php echo htmlspecialchars($item['alt']); ?>"
                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -238,11 +227,11 @@ require_once 'header.php';
                             <?php echo htmlspecialchars($item['judul']); ?>
                         </h4>
                         <p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-2 mb-4"><?php echo htmlspecialchars($item['ringkasan']); ?></p>
-                        <a class="text-primary font-bold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                        <span class="text-primary font-bold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                             Baca Selengkapnya <span class="material-symbols-outlined text-sm">chevron_right</span>
-                        </a>
+                        </span>
                     </div>
-                </article>
+                </a>
             <?php endforeach; ?>
         </div>
     </section>
