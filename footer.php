@@ -5,12 +5,10 @@
             <!-- Alamat & Kontak -->
             <div class="space-y-6">
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center text-primary">
-                        <span class="material-symbols-outlined">shield</span>
-                    </div>
+                    <img src="assets/images/logo-satpolpp.png" alt="Logo Satpol PP Kubu Raya" class="w-14 h-16 object-contain drop-shadow-md flex-shrink-0">
                     <h2 class="text-xl font-bold text-white tracking-tighter">
                         SATPOL PP <br/>
-                        <span class="text-xs font-normal opacity-60">Kubu Raya</span>
+                        <span class="text-xs font-normal opacity-60">Kabupaten Kubu Raya</span>
                     </h2>
                 </div>
                 <ul class="space-y-4">
@@ -51,16 +49,16 @@
 
             <!-- Lokasi & Sosial Media -->
             <div class="space-y-6">
-                <h4 class="text-white font-bold mb-6 text-lg">Lokasi &amp; Sosial Media</h4>
-                <div class="w-full h-40 bg-slate-800 rounded-2xl overflow-hidden relative">
-                    <div class="w-full h-full bg-slate-700 flex items-center justify-center">
-                        <div class="text-center z-10">
-                            <span class="material-symbols-outlined text-3xl mb-1 opacity-40">map</span>
-                            <p class="text-[10px] font-medium opacity-50">Kubu Raya, West Kalimantan</p>
-                        </div>
-                        <img alt="Map" class="absolute inset-0 w-full h-full object-cover opacity-30"
-                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgucSBNm0qSEQc55-kNgxiECorzuQaVinq5kSSuc2P7cDzGUv0KOJXNkgI_f0cY_Tu4MIx9EtWWe0gIsmvwfmTSV-FBSjwF79nmAbvd6vdWClzEoN4HCyC1VpvpRua-fH3-AJkFmJK4b3Le7rRvUzHA7I5AUcYW1l75hAuAHLVzjQcLACCmmFzvAWSUqw6_H6JQadRoUijv3d2JeSY7GF5b5_uCq6GlY9oJ8CihHS9TeKz1ZhrRsCEsUwP1cgSxr9xO5IBkwWLPN1T"/>
-                    </div>
+                <h4 class="text-white font-bold mb-6 text-lg">Lokasi & Sosial Media</h4>
+                <div class="w-full h-44 bg-slate-800 rounded-2xl overflow-hidden relative">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91905.06916129786!2d109.28319615197317!3d-0.11520633782440247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d514341623349%3A0x4810fbe08376e1b2!2sKantor%20Satuan%20Polisi%20Pamong%20Praja%20KKR!5e0!3m2!1sid!2sid!4v1777277423791!5m2!1sid!2sid"
+                        class="w-full h-full border-0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Lokasi Kantor Satpol PP KKR">
+                    </iframe>
                 </div>
                 <div class="flex gap-4">
                     <?php

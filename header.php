@@ -60,13 +60,13 @@
 
                 <!-- Logo -->
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white">
-                        <span class="material-symbols-outlined">shield</span>
-                    </div>
-                    <div>
-                        <h1 class="text-lg font-extrabold leading-none text-primary dark:text-slate-100 uppercase tracking-tighter">Satpol PP</h1>
-                        <p class="text-xs font-medium text-primary/60 dark:text-slate-400">Kabupaten Kubu Raya</p>
-                    </div>
+                    <a href="beranda.php" class="flex items-center gap-3 group">
+                        <img src="assets/images/logo-satpolpp.png" alt="Logo Satpol PP Kabupaten Kubu Raya" class="w-12 h-14 object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-200">
+                        <div>
+                            <h1 class="text-lg font-extrabold leading-none text-primary dark:text-slate-100 uppercase tracking-tighter">Satpol PP</h1>
+                            <p class="text-xs font-medium text-primary/60 dark:text-slate-400">Kabupaten Kubu Raya</p>
+                        </div>
+                    </a>
                 </div>
 
                 <!-- Mega Menu Navigation -->
@@ -80,7 +80,7 @@
                     $profil_active = in_array($current_page, $profil_pages);
 
                     // Kelompok halaman yang termasuk dalam menu "Standar Pelayanan"
-                    $pelayanan_pages = ['maklumat-pelayanan', 'sop', 'persyaratan-layanan', 'produk-layanan', 'biaya-layanan'];
+                    $pelayanan_pages = ['maklumat-pelayanan', 'sop'];
                     $pelayanan_active = in_array($current_page, $pelayanan_pages);
 
                     // Helper: tandai menu aktif berdasarkan $current_page
@@ -122,42 +122,44 @@
                             <ul class="space-y-3">
                                 <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'maklumat-pelayanan' ? 'text-primary font-bold' : ''; ?>" href="maklumat-pelayanan.php">Maklumat Pelayanan</a></li>
                                 <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'sop' ? 'text-primary font-bold' : ''; ?>" href="sop.php">SOP</a></li>
-                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'persyaratan-layanan' ? 'text-primary font-bold' : ''; ?>" href="persyaratan-layanan.php">Persyaratan Layanan</a></li>
-                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'produk-layanan' ? 'text-primary font-bold' : ''; ?>" href="produk-layanan.php">Produk Layanan</a></li>
-                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'biaya-layanan' ? 'text-primary font-bold' : ''; ?>" href="biaya-layanan.php">Biaya Layanan</a></li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- Media Informasi -->
+                    <?php
+                    $media_pages = ['layanan', 'pengumuman', 'agenda', 'produk-hukum', 'infografis', 'galeri-foto'];
+                    $media_active = in_array($current_page, $media_pages);
+                    ?>
                     <div class="group relative py-7">
-                        <button class="flex items-center gap-1 text-sm font-semibold hover:text-primary transition-colors">
+                        <button class="flex items-center gap-1 text-sm font-semibold hover:text-primary transition-colors <?php echo $media_active ? 'text-primary dark:text-white border-b-2 border-primary font-bold' : ''; ?>">
                             Media Informasi <span class="material-symbols-outlined text-sm">expand_more</span>
                         </button>
                         <div class="mega-menu absolute top-full left-0 w-64 bg-white dark:bg-slate-800 shadow-xl rounded-b-xl border-t-2 border-primary p-4">
                             <ul class="space-y-3">
-                                <li><a class="block text-sm hover:text-primary py-1" href="#">Layanan</a></li>
-                                <li><a class="block text-sm hover:text-primary py-1" href="#">Pengumuman</a></li>
-                                <li><a class="block text-sm hover:text-primary py-1" href="#">Agenda</a></li>
-                                <li><a class="block text-sm hover:text-primary py-1" href="#">Bank Data</a></li>
-                                <li><a class="block text-sm hover:text-primary py-1" href="#">Produk Hukum</a></li>
-                                <li><a class="block text-sm hover:text-primary py-1" href="#">Infografis</a></li>
-                                <li><a class="block text-sm hover:text-primary py-1" href="#">Galeri Foto</a></li>
-                                <li><a class="block text-sm hover:text-primary py-1" href="#">Galeri Video</a></li>
+                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'layanan' ? 'text-primary font-bold' : ''; ?>" href="layanan.php">Layanan</a></li>
+                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'pengumuman' ? 'text-primary font-bold' : ''; ?>" href="pengumuman.php">Pengumuman</a></li>
+                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'agenda' ? 'text-primary font-bold' : ''; ?>" href="agenda.php">Agenda</a></li>
+                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'produk-hukum' ? 'text-primary font-bold' : ''; ?>" href="produk-hukum.php">Produk Hukum</a></li>
+                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'infografis' ? 'text-primary font-bold' : ''; ?>" href="infografis.php">Infografis</a></li>
+                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'galeri-foto' ? 'text-primary font-bold' : ''; ?>" href="galeri-foto.php">Galeri Foto</a></li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- Interaksi -->
+                    <?php
+                    $interaksi_pages = ['survei-kepuasan', 'masukan-saran'];
+                    $interaksi_active = in_array($current_page, $interaksi_pages);
+                    ?>
                     <div class="group relative py-7">
-                        <button class="flex items-center gap-1 text-sm font-semibold hover:text-primary transition-colors">
+                        <button class="flex items-center gap-1 text-sm font-semibold hover:text-primary transition-colors <?php echo $interaksi_active ? 'text-primary dark:text-white border-b-2 border-primary font-bold' : ''; ?>">
                             Interaksi <span class="material-symbols-outlined text-sm">expand_more</span>
                         </button>
                         <div class="mega-menu absolute top-full right-0 w-64 bg-white dark:bg-slate-800 shadow-xl rounded-b-xl border-t-2 border-primary p-4">
                             <ul class="space-y-3">
-                                <li><a class="block text-sm hover:text-primary py-1" href="#">Survei Kepuasan</a></li>
-                                <li><a class="block text-sm hover:text-primary py-1" href="#">Masukan &amp; Saran</a></li>
-                                <li><a class="block text-sm hover:text-primary py-1" href="#">Buku Tamu</a></li>
+                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'survei-kepuasan' ? 'text-primary font-bold' : ''; ?>" href="survei-kepuasan.php">Survei Kepuasan</a></li>
+                                <li><a class="block text-sm hover:text-primary py-1 <?php echo $current_page === 'masukan-saran' ? 'text-primary font-bold' : ''; ?>" href="masukan-saran.php">Masukan &amp; Saran</a></li>
                             </ul>
                         </div>
                     </div>

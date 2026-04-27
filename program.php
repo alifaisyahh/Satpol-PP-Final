@@ -8,7 +8,7 @@ include 'header.php';
 <section class="relative w-full h-[420px] overflow-hidden bg-primary">
     <div class="absolute inset-0 z-0">
         <div class="absolute inset-0 bg-cover bg-center opacity-40"
-            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDsHusjtfUTUE6iwwaEiwmA6W77Nzy8TqW4n_CQkqB506YYyJu0HNPKq4c3YC5HWvHbtrRnl1J24y2rryWycb5UagPdRvGl7Po9VgrxjODAHoqiKemolqHVHEeXDMVAyHuReLbC2Gd_UFBaivTj3y9JMp4_LRY0Ixm06c9SrGmty2co_6rbPwng4d4GR77aek01u6eayZ8ahAQRVvMMZKvwdV5ZgHT_AXKivDc69rj3uTz6zyXt2yEn0osbYMz3pc-BNw3CaHs_87wg');"></div>
+            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDeLFcmlZFAAz_hMeL_QUSPC8jKtQ92hHlpNJ6jNit6O75bieL7n-wp9UORrGQJJA4F5lQDrx834Y5SeICCBpluVl5deDrc37tnDSQsZKSAQNTgH_zJ_uwD7nJ7LfYwJUpZQa0HaTwHkaA2eUFV0rrgiFVFPEI4OhydFI5vnG62ZJcWjld_VDISdss5nfGwnxjNqlXuUuUITsUEd98qp8De-j545Wqw_lPBxfDRAdDYi26IGSWis0U8zEUg98nPbroyurk5oIJvnYY5');"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-primary/70 via-primary/60 to-primary"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">

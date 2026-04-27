@@ -4,7 +4,7 @@ $current_page = "maklumat-pelayanan";
 require_once 'header.php';
 ?>
 
-<!-- Hero Section -->
+<!-- Hero Section (Standar) -->
 <section class="relative w-full h-[420px] overflow-hidden bg-primary">
     <div class="absolute inset-0 z-0">
         <div class="w-full h-full bg-cover bg-center opacity-40"
@@ -24,117 +24,86 @@ require_once 'header.php';
             Maklumat <span class="text-accent">Pelayanan</span>
         </h1>
         <p class="text-slate-300 mt-4 max-w-2xl text-sm md:text-base leading-relaxed">
-            Pernyataan kesanggupan Satpol PP Kabupaten Kubu Raya dalam memberikan pelayanan yang berkualitas kepada masyarakat.
+            Dokumen resmi pernyataan kesanggupan Satpol PP Kabupaten Kubu Raya dalam memberikan pelayanan berkualitas kepada masyarakat.
         </p>
     </div>
 </section>
 
 <!-- Main Content -->
-<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-14">
+<main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
-    <!-- ===== SECTION PERNYATAAN ===== -->
-    <section id="pernyataan">
-        <h2 class="text-2xl font-extrabold text-primary dark:text-white text-center mb-8">Pernyataan Maklumat</h2>
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+        <span class="inline-block w-10 h-1 bg-accent rounded mb-4"></span>
+        <h2 class="text-2xl font-extrabold text-primary dark:text-white">Dokumen Maklumat Pelayanan</h2>
+        <p class="text-slate-500 dark:text-slate-400 text-sm mt-2 max-w-xl mx-auto">
+            Dokumen maklumat pelayanan di bawah ini dapat dilihat secara langsung dan juga dapat diunduh.
+        </p>
+    </div>
 
-        <div class="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl p-8 shadow-sm space-y-6">
-            <!-- Kutipan Maklumat -->
-            <div class="text-center">
-                <p class="text-xs font-bold uppercase tracking-[0.2em] text-primary dark:text-slate-300 mb-4">Maklumat Pelayanan Satpol PP Kabupaten Kubu Raya</p>
-                <h3 class="text-lg md:text-xl font-black text-primary dark:text-white leading-snug italic">
-                    "Dengan ini kami menyatakan sanggup menyelenggarakan pelayanan sesuai standar pelayanan yang telah ditetapkan, dan apabila tidak menepati janji ini kami siap menerima sanksi sesuai peraturan perundang-undangan yang berlaku."
-                </h3>
-            </div>
+    <?php
+    // ============================================================
+    // EDIT FILE MAKLUMAT DI SINI
+    // Ganti 'file_url' dengan path file PDF nyata, contoh:
+    // $file_url = 'assets/docs/maklumat-pelayanan-2024.pdf';
+    // ============================================================
+    $file_url = '#'; 
+    $file_title = 'Maklumat Pelayanan Satpol PP Kabupaten Kubu Raya';
+    ?>
 
-            <div class="h-px bg-slate-100 dark:bg-slate-800"></div>
-
-            <!-- Penandatangan -->
-            <div class="text-center">
-                <p class="text-sm font-bold text-primary dark:text-slate-300 uppercase tracking-widest mb-2">Ditetapkan oleh</p>
-                <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed font-semibold">H. Sukiman, S.Sos., M.Si.</p>
-                <p class="text-slate-500 dark:text-slate-400 text-sm">Kepala Satuan Polisi Pamong Praja Kabupaten Kubu Raya</p>
-                <p class="text-slate-400 text-xs mt-1">Kubu Raya, 1 Januari 2024</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== SECTION KOMITMEN ===== -->
-    <section id="komitmen">
-        <h2 class="text-2xl font-extrabold text-primary dark:text-white text-center mb-8">Komitmen Layanan</h2>
-
-        <div class="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl p-8 shadow-sm space-y-5">
-            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                Dalam rangka mewujudkan pelayanan prima kepada masyarakat, Satpol PP Kabupaten Kubu Raya berkomitmen untuk:
-            </p>
-
-            <!-- ============================================================ -->
-            <!-- EDIT ISI KOMITMEN DI SINI                                    -->
-            <!-- ============================================================ -->
-            <?php
-            $komitmen_list = [
-                [
-                    'judul' => 'Tepat Waktu',
-                    'desc'  => 'Memberikan pelayanan sesuai dengan waktu yang telah ditetapkan dalam standar pelayanan tanpa penundaan yang tidak beralasan.',
-                ],
-                [
-                    'judul' => 'Tanpa Pungutan Liar',
-                    'desc'  => 'Seluruh layanan tidak dipungut biaya apapun kecuali yang telah ditetapkan oleh peraturan perundang-undangan yang berlaku.',
-                ],
-                [
-                    'judul' => 'Ramah dan Santun',
-                    'desc'  => 'Bersikap ramah, santun, dan profesional dalam setiap interaksi dengan masyarakat yang membutuhkan layanan.',
-                ],
-                [
-                    'judul' => 'Sesuai Prosedur',
-                    'desc'  => 'Melaksanakan setiap pelayanan sesuai prosedur operasional standar (SOP) yang telah ditetapkan dan dipublikasikan kepada masyarakat.',
-                ],
-                [
-                    'judul' => 'Responsif terhadap Pengaduan',
-                    'desc'  => 'Merespons setiap pengaduan masyarakat dalam waktu 1×24 jam dan menindaklanjutinya dalam waktu 3 hari kerja.',
-                ],
-                [
-                    'judul' => 'Transparan dan Akuntabel',
-                    'desc'  => 'Seluruh proses pelayanan dapat dipantau oleh masyarakat dan dilaksanakan secara akuntabel sesuai ketentuan yang berlaku.',
-                ],
-            ];
-            ?>
-            <div class="space-y-3">
-                <?php foreach ($komitmen_list as $i => $item): ?>
-                <div class="flex gap-4 items-start border border-slate-100 dark:border-slate-700 rounded-xl p-4 hover:border-primary/20 transition-colors">
-                    <span class="flex-shrink-0 w-7 h-7 bg-primary text-white text-xs font-black rounded-lg flex items-center justify-center mt-0.5"><?php echo $i + 1; ?></span>
-                    <div>
-                        <p class="text-sm font-bold text-primary dark:text-white mb-1"><?php echo htmlspecialchars($item['judul']); ?></p>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed"><?php echo htmlspecialchars($item['desc']); ?></p>
-                    </div>
+    <div class="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl overflow-hidden shadow-xl shadow-slate-200/80 dark:shadow-slate-900/50 flex flex-col">
+        <!-- Header Dokumen -->
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between p-6 bg-slate-50 dark:bg-slate-800/50 border-b border-slate-100 dark:border-slate-800 gap-4">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-red-50 dark:bg-red-900/20 rounded-xl flex items-center justify-center border border-red-100 dark:border-red-800/30">
+                    <span class="material-symbols-outlined text-2xl text-red-500">picture_as_pdf</span>
                 </div>
-                <?php endforeach; ?>
+                <div>
+                    <h3 class="text-base font-extrabold text-primary dark:text-white leading-snug">
+                        <?php echo htmlspecialchars($file_title); ?>
+                    </h3>
+                    <p class="text-xs text-slate-500 font-medium mt-1">Dokumen Resmi (PDF)</p>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- ===== SECTION DOWNLOAD ===== -->
-    <section id="download">
-        <h2 class="text-2xl font-extrabold text-primary dark:text-white text-center mb-8">Dokumen Resmi</h2>
-
-        <div class="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl p-8 shadow-sm">
-            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
-                Dokumen maklumat pelayanan resmi dapat diunduh dalam format PDF melalui tautan berikut.
-            </p>
-
-            <!-- ============================================================ -->
-            <!-- GANTI href="#" DENGAN PATH FILE PDF YANG SEBENARNYA          -->
-            <!-- ============================================================ -->
-            <a href="#" class="inline-flex items-center gap-3 bg-primary text-white px-6 py-3 rounded-xl font-bold text-sm hover:-translate-y-0.5 transition-all shadow-md shadow-primary/20">
-                <span class="material-symbols-outlined text-sm">download</span>
-                Unduh Maklumat Pelayanan (PDF)
+            <a href="<?php echo htmlspecialchars($file_url); ?>" download
+               class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-primary/90 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-150 shadow-md shadow-primary/20 whitespace-nowrap w-full sm:w-auto justify-center">
+                <span class="material-symbols-outlined text-[18px]">download</span>
+                Unduh Dokumen
             </a>
         </div>
-    </section>
+
+        <!-- Viewer PDF -->
+        <div class="w-full h-[600px] md:h-[800px] bg-slate-200 dark:bg-slate-900 relative">
+            <?php if ($file_url !== '#'): ?>
+                <iframe src="<?php echo htmlspecialchars($file_url); ?>" class="w-full h-full border-0"></iframe>
+            <?php else: ?>
+                <!-- Placeholder jika file_url belum diset -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-8 bg-slate-100 dark:bg-slate-800">
+                    <div class="w-24 h-24 bg-primary/10 rounded-3xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-primary text-5xl">picture_as_pdf</span>
+                    </div>
+                    <p class="text-primary dark:text-white font-extrabold text-xl mb-3">File PDF Belum Tersedia</p>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm max-w-md leading-relaxed mb-6">
+                        Dokumen belum diunggah. Silakan ganti nilai <code class="bg-white dark:bg-slate-700 px-2 py-1 rounded text-xs font-mono shadow-sm">$file_url</code> pada file <code class="bg-white dark:bg-slate-700 px-2 py-1 rounded text-xs font-mono shadow-sm">maklumat-pelayanan.php</code> dengan path file PDF yang sebenarnya.
+                    </p>
+                </div>
+            <?php endif; ?>
+        </div>
+    </div>
+
+    <!-- Info Catatan -->
+    <div class="mt-8 flex items-start gap-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800/30 rounded-xl p-5">
+        <span class="material-symbols-outlined text-blue-500 text-lg flex-shrink-0 mt-0.5">info</span>
+        <p class="text-blue-700 dark:text-blue-300 text-sm leading-relaxed">
+            Apabila Anda mengalami kendala dalam melihat atau mengunduh dokumen maklumat pelayanan, Anda dapat menghubungi kami melalui kontak resmi yang tertera pada bagian bawah website ini.
+        </p>
+    </div>
 
 </main>
 
 <!-- Terakhir Diperbarui -->
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-6 flex justify-end">
-    <p class="text-slate-400 text-xs italic">Terakhir Diperbarui: 23 April 2026</p>
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 flex justify-end">
+    <p class="text-slate-400 text-xs italic">Terakhir Diperbarui: 27 April 2026</p>
 </div>
 
 <?php require_once 'footer.php'; ?>
