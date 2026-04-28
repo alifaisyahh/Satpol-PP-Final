@@ -29,7 +29,6 @@ require_once 'header.php';
 
 <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <div class="text-center mb-12">
-        <span class="inline-block w-10 h-1 bg-accent rounded mb-4"></span>
         <h2 class="text-2xl font-extrabold text-primary dark:text-white">Daftar Dokumen SOP</h2>
         <p class="text-slate-500 dark:text-slate-400 text-sm mt-2 max-w-xl mx-auto">Dokumen SOP berikut dapat dilihat langsung maupun diunduh dalam format PDF.</p>
     </div>
@@ -47,7 +46,7 @@ require_once 'header.php';
     foreach ($sop_list as $s) { $grouped[$s['kategori']][] = $s; }
     ?>
 
-    <div class="flex flex-wrap gap-2 mb-8">
+    <div class="flex flex-wrap justify-center gap-2 mb-8">
         <button onclick="filterSOP('semua')" data-filter="semua" class="sop-btn active px-4 py-1.5 rounded-full text-xs font-bold border-2 border-primary bg-primary text-white transition-all">Semua (<?php echo count($sop_list); ?>)</button>
         <?php foreach(array_keys($grouped) as $kat): ?>
         <button onclick="filterSOP('<?php echo htmlspecialchars($kat); ?>')" data-filter="<?php echo htmlspecialchars($kat); ?>" class="sop-btn px-4 py-1.5 rounded-full text-xs font-bold border-2 border-slate-200 text-slate-600 hover:border-primary hover:text-primary transition-all"><?php echo htmlspecialchars($kat); ?> (<?php echo count($grouped[$kat]); ?>)</button>

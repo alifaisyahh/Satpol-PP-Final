@@ -34,7 +34,6 @@ include 'header.php';
             <h2 class="text-primary dark:text-white text-3xl font-extrabold tracking-tight">
                 Daftar Dokumen Strategis
             </h2>
-            <div class="h-1.5 w-24 bg-accent mt-4"></div>
         </div>
 
         <?php

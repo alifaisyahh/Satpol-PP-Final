@@ -34,7 +34,6 @@ require_once 'header.php';
 
     <!-- Section Header -->
     <div class="text-center mb-12">
-        <span class="inline-block w-10 h-1 bg-accent rounded mb-4"></span>
         <h2 class="text-2xl font-extrabold text-primary dark:text-white">Dokumen Maklumat Pelayanan</h2>
         <p class="text-slate-500 dark:text-slate-400 text-sm mt-2 max-w-xl mx-auto">
             Dokumen maklumat pelayanan di bawah ini dapat dilihat secara langsung dan juga dapat diunduh.

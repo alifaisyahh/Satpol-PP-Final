@@ -80,7 +80,7 @@ $galeri_foto = [
     </div>
 
     <!-- Layout Masonry Columns -->
-    <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+    <div class="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
         <?php foreach ($galeri_foto as $foto): ?>
         <div class="group relative rounded-3xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500 break-inside-avoid" onclick="openLightbox('<?php echo htmlspecialchars($foto['gambar']); ?>', '<?php echo htmlspecialchars($foto['judul']); ?>')">
             <img src="<?php echo htmlspecialchars($foto['gambar']); ?>" alt="<?php echo htmlspecialchars($foto['judul']); ?>" onerror="this.src='https://placehold.co/800x600/f8fafc/94a3b8?text=Gambar+Tidak+Tersedia'" class="w-full h-auto block object-cover transition-transform duration-700 group-hover:scale-110">

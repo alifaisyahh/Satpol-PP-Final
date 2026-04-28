@@ -70,7 +70,7 @@
                 </div>
 
                 <!-- Mega Menu Navigation -->
-                <nav class="hidden lg:flex items-center gap-8">
+                <nav class="hidden lg:flex items-center justify-center flex-1 gap-8 ml-8">
                     <?php
                     // Tentukan halaman aktif
                     $current_page = $_GET['page'] ?? basename($_SERVER['PHP_SELF'], '.php');

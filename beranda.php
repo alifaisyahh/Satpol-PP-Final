@@ -10,19 +10,28 @@ $current_page = "beranda";
 // ============================================================
 $pengumuman = [
     [
-        'tanggal' => '12 Oktober 2023',
-        'judul'   => 'Jadwal Patroli Gabungan Wilayah Sungai Raya Dalam & Sekitarnya',
-        'icon'    => 'calendar_today',
+        'id'        => 1,
+        'judul'     => 'Pengumuman Penerimaan Tenaga Pendukung Satpol PP Tahun 2024',
+        'tanggal'   => '25 April 2026',
+        'kategori'  => 'Kepegawaian',
+        'detail'    => 'Sebagai upaya mengoptimalkan pelayanan dan penegakan Peraturan Daerah, Satuan Polisi Pamong Praja (Satpol PP) Kabupaten Kubu Raya membuka kesempatan bagi putra-putri daerah untuk bergabung sebagai Tenaga Pendukung. Beberapa posisi yang dibutuhkan antara lain Petugas Ketertiban Umum, Petugas Administrasi, dan Petugas IT. Persyaratan lengkap dan formulir pendaftaran dapat diambil di kantor Satpol PP pada hari kerja. Pastikan untuk melengkapi seluruh dokumen pendukung sebelum batas waktu pendaftaran berakhir.',
+        'icon'      => 'group',
     ],
     [
-        'tanggal' => '10 Oktober 2023',
-        'judul'   => 'Sosialisasi Peraturan Daerah No. 4 Tahun 2023 Tentang Kebersihan',
-        'icon'    => 'description',
+        'id'        => 2,
+        'judul'     => 'Jadwal Operasi Penertiban PKL Kawasan Supadio',
+        'tanggal'   => '20 April 2026',
+        'kategori'  => 'Operasional',
+        'detail'    => 'Berdasarkan surat perintah tugas, Satuan Polisi Pamong Praja Kabupaten Kubu Raya bersama TNI dan Polri akan melaksanakan kegiatan Operasi Penertiban Pedagang Kaki Lima (PKL) yang berjualan di atas trotoar dan bahu jalan raya sepanjang kawasan Jalan Arteri Supadio. Kegiatan ini bertujuan untuk mengembalikan fungsi trotoar bagi pejalan kaki serta memperlancar arus lalu lintas di kawasan tersebut. Dihimbau kepada seluruh PKL agar mematuhi aturan dan segera memindahkan barang dagangannya sebelum waktu operasi dilaksanakan.',
+        'icon'      => 'store',
     ],
     [
-        'tanggal' => '08 Oktober 2023',
-        'judul'   => 'Pembukaan Pendaftaran Anggota Relawan Pemadam Kebakaran (Redkar)',
-        'icon'    => 'group',
+        'id'        => 3,
+        'judul'     => 'Pengumuman Libur Pelayanan Hari Raya Idulfitri 1446 H',
+        'tanggal'   => '15 April 2026',
+        'kategori'  => 'Pelayanan',
+        'detail'    => 'Sesuai dengan Surat Edaran Bupati Kubu Raya mengenai hari libur nasional dan cuti bersama dalam rangka perayaan Idulfitri 1446 H, kami menginformasikan bahwa pelayanan administrasi pada Kantor Satpol PP akan ditutup mulai tanggal 1 Syawal hingga tanggal yang ditentukan. Namun demikian, unit reaksi cepat dan layanan darurat tetap beroperasi selama 24 jam untuk menangani laporan keamanan dan ketertiban umum. Silakan hubungi nomor darurat kami jika Anda membutuhkan bantuan mendesak selama periode libur ini.',
+        'icon'      => 'calendar_today',
     ],
 ];
 
@@ -109,14 +118,14 @@ require_once 'header.php';
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 
         <!-- Kepala Satuan Card -->
-        <div class="lg:col-span-5 bg-white dark:bg-slate-900 rounded-3xl p-6 shadow-xl border border-slate-100 dark:border-slate-800 flex flex-col md:flex-row gap-6">
+        <div class="lg:col-span-6 bg-white dark:bg-slate-900 rounded-3xl p-6 shadow-xl border border-slate-100 dark:border-slate-800 flex flex-col md:flex-row gap-6">
             <div class="w-full md:w-48 h-64 flex-shrink-0 bg-slate-100 rounded-2xl overflow-hidden">
                 <img alt="Kepala Satuan Polisi Pamong Praja" class="w-full h-full object-cover"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_KkDUFdcqUkTUwrgTMQqTWm8Ab1VDm3EdUuvn6GNAjYEa2jkjlCqbKCFFgIivzQ0tbX_7GFit-YSSIH0uJTgD8ebtq3IDVTyH4_nd9ZgCOBTHVWP17IzUwDjbfuIe1R0DVuQWLp5V1VQVS8AazBJTiDyzWQff2PXE5srqrp3qVZJFSmJMnQGjCEUyKoDks6iwNLYgaSBoFYGLiKHJZCNG4Iuyk8faHqu-v45FbMOtOwukU_YhK-g0xyAbHq0u31tDx9gDCFqO1uxQ" />
             </div>
             <div class="flex flex-col justify-center">
                 <span class="text-accent font-bold text-xs uppercase tracking-widest mb-2 block">Pimpinan Kami</span>
-                <h3 class="text-2xl font-extrabold text-primary dark:text-white leading-tight mb-2">H. Sukiman, S.Sos., M.Si.</h3>
+                <h3 class="text-2xl font-extrabold text-primary dark:text-white leading-tight mb-2">Rasudi, S. Sos, M. Si</h3>
                 <p class="text-sm font-medium text-slate-500 mb-4">Kepala Satuan Polisi Pamong Praja Kabupaten Kubu Raya</p>
                 <div class="h-1 w-12 bg-accent rounded-full mb-4"></div>
                 <p class="text-xs text-slate-400 italic">"Melayani dengan Hati, Menegakkan dengan Disiplin demi Ketertiban Masyarakat Kubu Raya."</p>
@@ -124,21 +133,20 @@ require_once 'header.php';
         </div>
 
         <!-- Quick Access Grid -->
-        <div class="lg:col-span-7 bg-white dark:bg-slate-900 rounded-3xl p-8 shadow-xl border border-slate-100 dark:border-slate-800">
+        <div class="lg:col-span-6 bg-white dark:bg-slate-900 rounded-3xl p-8 shadow-xl border border-slate-100 dark:border-slate-800">
             <h3 class="text-xl font-bold text-primary dark:text-white mb-6">Akses Cepat</h3>
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 <?php
                 $akses_cepat = [
-                    ['icon' => 'category',      'label' => 'Layanan'],
-                    ['icon' => 'poll',           'label' => 'Survei'],
-                    ['icon' => 'calendar_month', 'label' => 'Agenda'],
-                    ['icon' => 'folder_shared',  'label' => 'Bank Data'],
-                    ['icon' => 'badge',          'label' => 'Pegawai'],
-                    ['icon' => 'account_tree',   'label' => 'Struktur'],
-                    ['icon' => 'flag',           'label' => 'Visi Misi'],
+                    ['icon' => 'category',      'label' => 'Layanan', 'link' => 'layanan.php'],
+                    ['icon' => 'poll',           'label' => 'Survei', 'link' => 'survei-kepuasan.php'],
+                    ['icon' => 'calendar_month', 'label' => 'Agenda', 'link' => 'agenda.php'],
+                    ['icon' => 'badge',          'label' => 'Pegawai', 'link' => 'data-pegawai.php'],
+                    ['icon' => 'account_tree',   'label' => 'Struktur', 'link' => 'struktur-organisasi.php'],
+                    ['icon' => 'flag',           'label' => 'Visi Misi', 'link' => 'visi-misi.php'],
                 ];
                 foreach ($akses_cepat as $item): ?>
-                    <a class="flex flex-col items-center p-4 rounded-2xl hover:bg-primary/5 transition-colors group" href="#">
+                    <a class="flex flex-col items-center p-4 rounded-2xl hover:bg-primary/5 transition-colors group" href="<?php echo htmlspecialchars($item['link']); ?>">
                         <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all mb-3">
                             <span class="material-symbols-outlined"><?php echo $item['icon']; ?></span>
                         </div>
@@ -163,11 +171,11 @@ require_once 'header.php';
                     <span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">notifications_active</span>
                     Pengumuman Terbaru
                 </h3>
-                <a class="text-primary text-sm font-semibold hover:underline" href="#">Lihat Semua</a>
+                <a class="text-primary text-sm font-semibold hover:underline" href="pengumuman.php">Lihat Semua</a>
             </div>
             <div class="space-y-6">
                 <?php foreach ($pengumuman as $index => $item): ?>
-                    <div class="flex gap-4 group cursor-pointer <?php echo $index > 0 ? 'border-t border-slate-100 dark:border-slate-800 pt-6' : ''; ?>">
+                    <div onclick="openPengumumanModal(<?php echo $item['id']; ?>)" class="flex gap-4 group cursor-pointer <?php echo $index > 0 ? 'border-t border-slate-100 dark:border-slate-800 pt-6' : ''; ?>">
                         <div class="flex-shrink-0 w-12 h-12 bg-slate-50 dark:bg-slate-800 rounded-xl flex items-center justify-center text-primary transition-colors group-hover:bg-primary group-hover:text-white">
                             <span class="material-symbols-outlined"><?php echo $item['icon']; ?></span>
                         </div>
@@ -188,10 +196,10 @@ require_once 'header.php';
             <div class="relative h-full p-10 flex flex-col justify-end">
                 <h3 class="text-3xl font-bold text-white mb-4">Visualisasi SOP Pelayanan</h3>
                 <p class="text-slate-300 mb-6">Pahami alur prosedur pengaduan dan pelayanan operasional Satpol PP dengan infografis interaktif kami.</p>
-                <button class="w-fit bg-white text-primary px-6 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-slate-100 transition-colors">
+                <a href="infografis.php" class="w-fit bg-white text-primary px-6 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-slate-100 transition-colors">
                     <span class="material-symbols-outlined">analytics</span>
                     Buka Infografis
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -292,6 +300,51 @@ require_once 'header.php';
     </section>
 
 </main>
+
+<!-- Detail Pengumuman Modal -->
+<div id="pengumuman-modal" class="fixed inset-0 z-[9999] bg-black/70 backdrop-blur-sm flex items-center justify-center hidden p-4">
+    <div class="relative bg-white dark:bg-slate-900 rounded-2xl shadow-2xl w-full max-w-2xl overflow-hidden flex flex-col max-h-[90vh]">
+        <div class="flex justify-between items-center p-6 border-b border-slate-100 dark:border-slate-800">
+            <h3 class="text-lg font-bold text-primary dark:text-white">Detail Pengumuman</h3>
+            <button onclick="closePengumumanModal()" class="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors">
+                <span class="material-symbols-outlined text-slate-600 dark:text-slate-300">close</span>
+            </button>
+        </div>
+        <div class="p-6 overflow-y-auto">
+            <div class="flex flex-wrap gap-2 mb-4" id="modal-tags"></div>
+            <h2 id="modal-judul" class="text-xl md:text-2xl font-extrabold text-primary dark:text-white mb-4 leading-snug"></h2>
+            <div class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed space-y-4" id="modal-detail"></div>
+        </div>
+        <div class="p-6 bg-slate-50 dark:bg-slate-800/50 border-t border-slate-100 dark:border-slate-800 flex justify-end">
+            <button onclick="closePengumumanModal()" class="px-6 py-2 bg-primary text-white rounded-xl font-bold hover:bg-primary/90 transition-colors shadow-md shadow-primary/20">Tutup</button>
+        </div>
+    </div>
+</div>
+
+<script>
+const dataPengumumanBeranda = <?php echo json_encode($pengumuman); ?>;
+function openPengumumanModal(id) {
+    const item = dataPengumumanBeranda.find(p => p.id === id);
+    if (!item) return;
+    document.getElementById('modal-judul').textContent = item.judul;
+    document.getElementById('modal-detail').innerHTML = `<p>${item.detail}</p>`;
+    let tagsHtml = `<span class="text-[10px] font-bold uppercase px-3 py-1 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300">${item.kategori}</span>`;
+    tagsHtml += `<span class="text-[10px] font-bold uppercase px-3 py-1 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300"><span class="material-symbols-outlined text-[10px] mr-1 align-middle">calendar_month</span>${item.tanggal}</span>`;
+    document.getElementById('modal-tags').innerHTML = tagsHtml;
+    document.getElementById('pengumuman-modal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+function closePengumumanModal() {
+    document.getElementById('pengumuman-modal').classList.add('hidden');
+    document.body.style.overflow = '';
+}
+document.getElementById('pengumuman-modal').addEventListener('click', function(e) {
+    if (e.target === this) closePengumumanModal();
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && !document.getElementById('pengumuman-modal').classList.contains('hidden')) closePengumumanModal();
+});
+</script>
 
 <?php
 // ============================================================

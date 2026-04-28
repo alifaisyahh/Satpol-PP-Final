@@ -63,14 +63,26 @@
                 <div class="flex gap-4">
                     <?php
                     $sosmed_icons = [
-                        'https://lh3.googleusercontent.com/aida-public/AB6AXuD2r-cQVSQDm7d1ehUsyvvFf3H_TEJi4TJKiQbHCqrSCR5om9pHmGOYyUpFs2C43pyfNqd3ihxvqM4BbYGjB40GgdA3g25SgaHsjNKECuIUnllEoc8f0rp1pmBgIyCIUwGkOlopJplVQ4SR-wCTaopnWiKR3cLs7AAt-eoPhL0FxuE3pt81NCPAH2TJ5DdP1hOWo42nATdAkm5C752ze4mD0Er-m8g9x95oUO065TLlafR8TaN6CvrXbwiRXGgsEXX5tzV9IaxOPcH5',
-                        'https://lh3.googleusercontent.com/aida-public/AB6AXuAvjNw757WQJ88SjxZxET3PAVLr22yseQUsaOqo-5FJofChObIDq8z9GbBLg1ficiqE6i09LIL_X6O4lTjEjtp2JfvNfW2Uksb-ry09c7xb_j_9PAbbKswe9ZLU771L6HS0Zyox1jgVUCUQuSrkyZSLC_IKROsqix9gJm2TcpbGk4AAD5Xe0rfrwrI_7SDp0D_69IgnENeHZqrrQvIoJXIRI1j-22CYi3wwiBGCFf0WSAaIK3rkD-eUcf1RMjWWPrHMSKKkFs-j085W',
-                        'https://lh3.googleusercontent.com/aida-public/AB6AXuDL57Dl2do5RkQ_q5PeSPsGxLfRkPujo91dMD2jlOsQCjQVuPLNJAAtsixpeOtLQaOl4_3lcn5SWcVI1EIuk5jF2eSY8OdH6Ns7RjAOG-nRmy6n5eD2dxYt2FkF_bcxYuBoO-d09hOrSR5FecedUn9BgWYlC8xr6E6-HPvN4J_x9Z7u_oubvtsmjQWPckJggmeF_amhx2K8BGy9vdLn4E5ytAGjSOmqpQjcwfdAQ9Sq7fP8w1knJMbt1FlWq69z10n_zROFC0NwLDvj',
-                        'https://lh3.googleusercontent.com/aida-public/AB6AXuCwb6YcZooteoW5Qududu0A1IiebtYbgeS67CZk8i4AeXcA6S9vkHaq0sO7Z9WxkFcMYnwffnKW7_aEBwlxM3ZyMIprO5huU7ypUgwaHk0LFjz31-KV3nhn0nsbmdxfF34t9kFZBUDOgWzwy5TJvc6GaEw6WPUl7bYXf5FT4sdeJ_E3SPAGkHlGnYJ8AuvTuxRRa4plRmhercB_zSzhYtUTB9ib1t-WlDrGHmx8Bo3DRrR00uh5i3zwITEvJ-vNKw_xa5t2yitukVs6',
+                        [
+                            'url' => '#',
+                            'img' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuD2r-cQVSQDm7d1ehUsyvvFf3H_TEJi4TJKiQbHCqrSCR5om9pHmGOYyUpFs2C43pyfNqd3ihxvqM4BbYGjB40GgdA3g25SgaHsjNKECuIUnllEoc8f0rp1pmBgIyCIUwGkOlopJplVQ4SR-wCTaopnWiKR3cLs7AAt-eoPhL0FxuE3pt81NCPAH2TJ5DdP1hOWo42nATdAkm5C752ze4mD0Er-m8g9x95oUO065TLlafR8TaN6CvrXbwiRXGgsEXX5tzV9IaxOPcH5'
+                        ],
+                        [
+                            'url' => 'https://www.instagram.com/satpolpp_kuburaya?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+                            'img' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuAvjNw757WQJ88SjxZxET3PAVLr22yseQUsaOqo-5FJofChObIDq8z9GbBLg1ficiqE6i09LIL_X6O4lTjEjtp2JfvNfW2Uksb-ry09c7xb_j_9PAbbKswe9ZLU771L6HS0Zyox1jgVUCUQuSrkyZSLC_IKROsqix9gJm2TcpbGk4AAD5Xe0rfrwrI_7SDp0D_69IgnENeHZqrrQvIoJXIRI1j-22CYi3wwiBGCFf0WSAaIK3rkD-eUcf1RMjWWPrHMSKKkFs-j085W'
+                        ],
+                        [
+                            'url' => 'https://youtube.com/@satpolppkabupatenkuburaya?si=ExewOJs7aTzKLlPe',
+                            'img' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuDL57Dl2do5RkQ_q5PeSPsGxLfRkPujo91dMD2jlOsQCjQVuPLNJAAtsixpeOtLQaOl4_3lcn5SWcVI1EIuk5jF2eSY8OdH6Ns7RjAOG-nRmy6n5eD2dxYt2FkF_bcxYuBoO-d09hOrSR5FecedUn9BgWYlC8xr6E6-HPvN4J_x9Z7u_oubvtsmjQWPckJggmeF_amhx2K8BGy9vdLn4E5ytAGjSOmqpQjcwfdAQ9Sq7fP8w1knJMbt1FlWq69z10n_zROFC0NwLDvj'
+                        ],
+                        [
+                            'url' => '#',
+                            'img' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuCwb6YcZooteoW5Qududu0A1IiebtYbgeS67CZk8i4AeXcA6S9vkHaq0sO7Z9WxkFcMYnwffnKW7_aEBwlxM3ZyMIprO5huU7ypUgwaHk0LFjz31-KV3nhn0nsbmdxfF34t9kFZBUDOgWzwy5TJvc6GaEw6WPUl7bYXf5FT4sdeJ_E3SPAGkHlGnYJ8AuvTuxRRa4plRmhercB_zSzhYtUTB9ib1t-WlDrGHmx8Bo3DRrR00uh5i3zwITEvJ-vNKw_xa5t2yitukVs6'
+                        ],
                     ];
-                    foreach ($sosmed_icons as $icon_url): ?>
-                    <a class="w-10 h-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center transition-colors" href="#">
-                        <img class="w-5 h-5 opacity-70" src="<?php echo $icon_url; ?>"/>
+                    foreach ($sosmed_icons as $icon): ?>
+                    <a class="w-10 h-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center transition-colors" href="<?php echo htmlspecialchars($icon['url']); ?>" <?php echo $icon['url'] !== '#' ? 'target="_blank"' : ''; ?>>
+                        <img class="w-5 h-5 opacity-70" src="<?php echo $icon['img']; ?>"/>
                     </a>
                     <?php endforeach; ?>
                 </div>
