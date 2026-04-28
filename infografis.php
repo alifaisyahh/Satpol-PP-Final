@@ -5,28 +5,22 @@ require_once 'header.php';
 
 $infografis = [
     [
-        'judul'     => 'Alur Penanganan Pengaduan Ketertiban Umum',
-        'kategori'  => 'Pelayanan',
-        'gambar'    => 'https://lh3.googleusercontent.com/aida-public/AB6AXuBSGy6hBHPVh312XyczwXYJvsUZmgFx6afUBQMpnGgfJcTQ_FHrVZfyjRp4OAoF2dvXn9uLqWLSjuybafJc2FLRMwBpqSEG1fyG8wBW-iUKAv39jxN-LRZHe8SeiT2YXOdhtMYZERhHVSjIRe796dlySNqp3oYeOfdMcZUJFp_YG32VCorC4QxGp3B5ZUzTHGhNd7VsvRej4Vx9q3Z4CdDXONEhBwUXgsiJoKYe64FZtfoolCiI2qINVw1e6gHGAfNvYhRF5qwHD0Dl',
-        'tanggal'   => '10 Mei 2026'
+        'judul'     => 'Tumbuh Kembang Anak Dengan Media Digital',
+        'kategori'  => 'Edukasi',
+        'gambar'    => 'assets/images/tumbuh-kembang-anak.jpg',
+        'tanggal'   => '28 April 2026'
     ],
     [
-        'judul'     => 'Struktur Organisasi Satpol PP',
-        'kategori'  => 'Profil',
-        'gambar'    => 'https://lh3.googleusercontent.com/aida-public/AB6AXuDQeYk4Z_N4F2E2-o4B4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z4Z', // placeholder
-        'tanggal'   => '05 Mei 2026'
+        'judul'     => 'Manfaat Teknologi Digital Bagi Pendidikan Anak',
+        'kategori'  => 'Edukasi',
+        'gambar'    => 'assets/images/manfaat-teknologi.jpg',
+        'tanggal'   => '28 April 2026'
     ],
     [
-        'judul'     => 'Kawasan Bebas PKL di Sungai Raya',
-        'kategori'  => 'Operasional',
-        'gambar'    => 'https://lh3.googleusercontent.com/aida-public/AB6AXuC9u85JT-qUW_bkCCvz2QrNGAdDnRjP2154IVnfzDZbTj39zEjQgoPzAvVCkhnvD4MF0TJoSKXtCAISl_wp-98MGCncu41QWK_P2ouaJpmQC94Bqz2lYcgGPvCCGN8wTSWYmCKcFKGHXRT4Gm1LewIU7hVWqRf4E2FPKH4tty9oNUBw4HtaAz6tnnfR7ou2NjFoEo1brNQ_AbjLPCYR5iTxyDuf4ik2aqm2dZa7fLxz91avliWoovqHSSJxKoAXmgjV074WQsskKfcm',
-        'tanggal'   => '25 April 2026'
-    ],
-    [
-        'judul'     => 'Syarat Rekomendasi Izin Keramaian',
-        'kategori'  => 'Pelayanan',
-        'gambar'    => 'https://lh3.googleusercontent.com/aida-public/AB6AXuBduJDsl5l4muB6I-wIUVgwmUyPYgbT5gJTd2CKPeKSktjkMDSJGkdMJAlCu90lO8F18KMfGTirgQcad2UEyxP1arlguAnKvBiY-UevEtPcpAPfJLz60x7IPLrr7v1Wz4FOUMysh8QesL_q967F2fyXOZ9VwwUO9HmaBDfP0OWTQQKU8xvEYvU5KpPb0Totznmq0kIA82ONDqQHGwV7hxhtyo5U1CokK8I2BCnZpUqfprMHw7kImAiVLScwN_c6_qTOMel-xYaQLGvH',
-        'tanggal'   => '15 April 2026'
+        'judul'     => 'Efek Negatif Teknologi Digital Pada Anak',
+        'kategori'  => 'Edukasi',
+        'gambar'    => 'assets/images/efek-negatif-teknologi.png',
+        'tanggal'   => '28 April 2026'
     ]
 ];
 ?>

@@ -7,22 +7,22 @@
                 <div class="flex items-center gap-3">
                     <img src="assets/images/logo-satpolpp.png" alt="Logo Satpol PP Kubu Raya" class="w-14 h-16 object-contain drop-shadow-md flex-shrink-0">
                     <h2 class="text-xl font-bold text-white tracking-tighter">
-                        SATPOL PP <br/>
+                        SATPOL PP <br />
                         <span class="text-xs font-normal opacity-60">Kabupaten Kubu Raya</span>
                     </h2>
                 </div>
                 <ul class="space-y-4">
                     <li class="flex gap-3">
                         <span class="material-symbols-outlined text-accent">location_on</span>
-                        <span class="text-sm">Jl. Arteri Supadio, Sungai Raya, Kab. Kubu Raya, Kalimantan Barat 78391</span>
+                        <span class="text-sm">Jl. Angkasa Pura 2, Komplek Perkantoran Pemda Kubu Raya, Kecamatan Sungai Raya, Kabupaten Kubu Raya, Kalimantan Barat.</span>
                     </li>
                     <li class="flex gap-3">
                         <span class="material-symbols-outlined text-accent">call</span>
-                        <span class="text-sm">(0561) 1234567</span>
+                        <span class="text-sm">(+62)8999097416</span>
                     </li>
                     <li class="flex gap-3">
                         <span class="material-symbols-outlined text-accent">mail</span>
-                        <span class="text-sm">satpolpp@kuburaykab.go.id</span>
+                        <span class="text-sm">satpolpp@kuburayakab.go.id</span>
                     </li>
                 </ul>
             </div>
@@ -41,7 +41,7 @@
                             'Peta Lokasi Kantor',
                         ];
                         foreach ($footer_tautan as $link): ?>
-                        <li><a class="text-sm hover:text-white transition-colors" href="#"><?php echo htmlspecialchars($link); ?></a></li>
+                            <li><a class="text-sm hover:text-white transition-colors" href="#"><?php echo htmlspecialchars($link); ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -81,9 +81,9 @@
                         ],
                     ];
                     foreach ($sosmed_icons as $icon): ?>
-                    <a class="w-10 h-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center transition-colors" href="<?php echo htmlspecialchars($icon['url']); ?>" <?php echo $icon['url'] !== '#' ? 'target="_blank"' : ''; ?>>
-                        <img class="w-5 h-5 opacity-70" src="<?php echo $icon['img']; ?>"/>
-                    </a>
+                        <a class="w-10 h-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center transition-colors" href="<?php echo htmlspecialchars($icon['url']); ?>" <?php echo $icon['url'] !== '#' ? 'target="_blank"' : ''; ?>>
+                            <img class="w-5 h-5 opacity-70" src="<?php echo $icon['img']; ?>" />
+                        </a>
                     <?php endforeach; ?>
                 </div>
             </div>
@@ -104,4 +104,5 @@
 </footer>
 
 </body>
+
 </html>
